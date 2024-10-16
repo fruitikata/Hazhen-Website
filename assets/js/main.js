@@ -1,4 +1,4 @@
-/*=============== SHOW MENU ===============*/
+/* SHOW MENU */
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
@@ -17,7 +17,7 @@ if(navClose){
     })
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+/* REMOVE MENU MOBILE */
 const navLink = document.querySelectorAll('.nav-link')
 
 const linkAction = () =>{
@@ -27,7 +27,7 @@ const linkAction = () =>{
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== ADD BLUR HEADER ===============*/
+/* ADD BLUR HEADER */
 const blurHeader = () =>{
     const header = document.getElementById('header')
     // Add a class if the bottom offset is greater than 50 of the viewport
@@ -36,8 +36,8 @@ const blurHeader = () =>{
 }
 window.addEventListener('scroll', blurHeader)
 
-/*=============== GSAP ANIMATION ===============*/
+/* GSAP ANIMATION */
 
 
-/*=============== SAKURA ANIMATION ===============*/
+/* SAKURA ANIMATION */
 const sakura = new Sakura('.sakura-petals')

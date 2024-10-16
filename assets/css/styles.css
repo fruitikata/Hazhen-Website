@@ -1,40 +1,40 @@
-/*=============== GOOGLE FONTS ===============*/
+/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+/* VARIABLES CSS */
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
+  /* Colors */
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(353, 98%, 67%);
   --first-color-alt: hsl(353, 50%, 47%);
   --gradient-color: linear-gradient(90deg, var(--first-color),var(--first-color-alt));
   --black-color: hsl(353, 90%, 16%);
 
-  /*========== Font and typography ==========*/
+  /* Font and typography */
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat Alternates", sans-serif;
   --biggest-font-size: 2.5rem;
   --normal-font-size: .938rem;
 
-  /*========== Font weight ==========*/
+  /* Font weight */
   --font-medium: 500;
   --font-semi-bold: 600;
   --font-bold: 700;
 
-  /*========== z index ==========*/
+  /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-/*========== Responsive typography ==========*/
+/* Responsive typography */
 @media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 5.5rem;
     --normal-font-size: 1rem;
   }
 }
-/*=============== BASE ===============*/
+/* BASE */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -57,7 +57,7 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* REUSABLE CSS CLASSES */
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -66,7 +66,7 @@ img {
   overflow: hidden;
 }
 
-/*=============== HEADER & NAV ===============*/
+/* HEADER & NAV */
 .header{
   position: fixed;
   width: 100%;
@@ -162,7 +162,7 @@ img {
 }
 
 
-/*=============== HOME ===============*/
+/* HOME */
 .home{
   position: relative;
 }
@@ -248,8 +248,8 @@ img {
   pointer-events: none;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
+/* BREAKPOINTS */
+/* For small devices like phones */
 @media screen and (max-width: 320px){
   .container{
     margin-inline: 1rem;
@@ -266,7 +266,7 @@ img {
   }
 }
 
-/* For medium devices */
+/* For medium devices like tablets or ipads*/
 @media screen and (min-width: 576px){
   .home-container {
     display: flex;
