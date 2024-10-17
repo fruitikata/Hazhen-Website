@@ -236,6 +236,50 @@ img {
   filter: saturate(1.3);
 }*/
 
+
+/* HOW TO ORDER */
+.hto{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.3);
+}
+.hto-container{
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /*Full viewport height to ensure centering */
+  padding-top: 0; /* Remove the padding-top */
+  position: relative;
+}
+
+.hto-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.3);
+}
+.hto-data{
+  position: relative;
+  text-align: center;
+  z-index: var(--z-tooltip);
+
+  background-color: rgba(244, 195, 195, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space around the text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 600px; /* Limit the width of the box */
+    margin: auto; /* Center the box horizontally */
+}
+
 /* Sakura petals */
 .sakura-petals{
   position: fixed;
@@ -247,6 +291,7 @@ img {
   z-index: 10000;
   pointer-events: none;
 }
+
 
 /* BREAKPOINTS */
 /* For small devices like phones */
